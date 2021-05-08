@@ -378,12 +378,12 @@ ggplot(combined_data, aes(gdpPercap, value_lb, color = SUBJECT)) + geom_point()+
   labs(x = "GDP Per Capita" , y = "Per Capita Consumption in Pounds", color = "Type of Meat", title = "GDP Per Capita vs. Meat Consumption by Country") + scale_x_continuous(labels = addUnits)
 ```
 
-- I generated another multiple linear regression model to summarize the dataset looking at life expectancy as a function of consumption quantity, continent, time and type of meat; the adjusted R-squared tells me that the graph is 65% fitted to the regression line, meaning only 35% of the variability is unexplained. The p-value again tells me it is a statistically significant relationship.
+- I generated another multiple linear regression model to summarize the dataset looking at life expectancy as a function of consumption quantity, continent, time and type of meat; the adjusted R-squared tells me that the graph is 48% fitted to the regression line, meaning 52% of the variability is unexplained. The p-value again tells me it is a statistically significant relationship.
 
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, results = TRUE}
 #model 5
-model_meattype_GDP <- lm(lifeExp ~ value_lb+continent+TIME+SUBJECT, data = combined_data)
+model_meattype_GDP <- lm(gdpPercap ~ value_lb+continent+TIME+SUBJECT, data = combined_data)
 summary(model_meattype_GDP)
 ```
 
