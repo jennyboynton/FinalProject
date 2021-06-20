@@ -3,9 +3,9 @@
 
 ### Input: 
 - A dataset imported as full indicator data from the Organisation for Economic Co-operation and Development (OECD) web page 
-    - (to view: https://data.oecd.org/agroutput/meat-consumption.htm > click "download" > click "Full indicator data (.csv)")
+    - (to download: https://data.oecd.org/agroutput/meat-consumption.htm > click "download" > click "Full indicator data (.csv)")
 - A dataset with the Death rate from Cardiovascular Disease from 1990 to 2017 from Our World in Data webpage
-    - (to view: https://ourworldindata.org/grapher/cardiovascular-disease-death-rates?tab=chart > click "download" > click "cardiovascular-disease-death-rates.csv")
+    - (to download: https://ourworldindata.org/grapher/cardiovascular-disease-death-rates?tab=chart > click "download" > click "cardiovascular-disease-death-rates.csv")
 - A dataset including life expectancy, GDP per capita, and population from the gapminder package in Rstudio, which can also be found in its raw form on the       gapminder website (http://www.gapminder.org/data/)
 
 ### Output:
